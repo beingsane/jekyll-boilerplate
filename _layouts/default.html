@@ -10,6 +10,10 @@ layout: compress
   <title>{{ page.title }}</title>
 </head>
 <body>
-  {{ content }}
+  {% include header.html %}
+  <main class="main">
+    {{ content }}
+  </main>
+  {% include footer.html %}
 </body>
 </html>
